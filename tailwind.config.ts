@@ -1,0 +1,56 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: ['./src/**/*.{ts,tsx,mdx}'],
+  theme: {
+    extend: {
+      colors: {
+        ink: {
+          DEFAULT: '#0E3A75',
+          soft: '#1A4FA0',
+          mute: '#4A6FA5',
+        },
+        cream: {
+          DEFAULT: '#F4F8FD',
+          deep: '#E6EFFA',
+          warm: '#DDE9F5',
+        },
+        gold: {
+          DEFAULT: '#2E8BE6',
+          deep: '#1E73D6',
+          light: '#7CC0F0',
+        },
+        sky: {
+          soft: '#C8E2F7',
+        },
+      },
+      fontFamily: {
+        serif: ['var(--font-display)', 'Georgia', 'serif'],
+        sans: ['var(--font-body)', 'system-ui', 'sans-serif'],
+        accent: ['var(--font-accent)', 'serif'],
+      },
+      maxWidth: {
+        prose: '70ch',
+      },
+      boxShadow: {
+        soft: '0 12px 40px -16px rgba(14, 58, 117, 0.25)',
+        ring: '0 0 0 1px rgba(46, 139, 230, 0.35), 0 12px 30px -12px rgba(14, 58, 117, 0.35)',
+      },
+      backgroundImage: {
+        'noise': "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.05  0 0 0 0 0.05  0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(12px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.7s ease-out both',
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
