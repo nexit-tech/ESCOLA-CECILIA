@@ -326,3 +326,73 @@ export const stats = [
   { value: 'BNCC', label: 'Currículo alinhado' },
   { value: '15+', label: 'Atividades incluídas' },
 ];
+
+export const statsCounter = [
+  { number: 33, suffix: '+', label: 'anos formando gerações' },
+  { number: 2000, suffix: '+', label: 'alunos ao longo da história' },
+  { number: 20, suffix: '+', label: 'atividades extracurriculares' },
+  { number: 4, suffix: '', label: 'segmentos da Educação Básica' },
+];
+
+export const marqueeItems = [
+  'Valores Cristãos',
+  'Bilinguismo desde a Educação Infantil',
+  'Sala Google Education',
+  'Natação na grade curricular',
+  'Ballet & Ritmos',
+  'Simulados ENEM',
+  'Sarau Literário',
+  'Feira de Profissões',
+  'Educação Financeira',
+  'Empreendedorismo',
+  'Música & Artes',
+  'Orientação Vocacional',
+];
+
+export const testimonials = [
+  {
+    quote:
+      'Meu filho estuda no Cecília Pinheiro desde o G3 e hoje está no Fundamental II. Acompanhei de perto o crescimento dele em cada etapa — academicamente e como pessoa. A escola é uma extensão da nossa família.',
+    author: 'Renata Almeida',
+    role: 'Mãe do Pedro, Fundamental II',
+  },
+  {
+    quote:
+      'O cuidado da equipe pedagógica e o ambiente acolhedor fizeram toda a diferença na adaptação da minha filha. Ela ama as aulas de ballet e o tempo na piscina — está sempre animada para ir à escola.',
+    author: 'Carolina Mendes',
+    role: 'Mãe da Sofia, Educação Infantil',
+  },
+  {
+    quote:
+      'Como ex-aluna, hoje vejo minha sobrinha frequentando o mesmo Educandário que me formou. A escola evoluiu muito, mas preservou o essencial: o jeito de cuidar de cada criança.',
+    author: 'Beatriz Lage',
+    role: 'Ex-aluna e tia de aluno atual',
+  },
+];
+
+export const whyCecilia = [
+  {
+    number: '01',
+    title: 'Tradição renovada',
+    body:
+      'Mais de três décadas educando com afeto, hoje com práticas pedagógicas e tecnológicas de ponta.',
+  },
+  {
+    number: '02',
+    title: 'Mensalidade que inclui tudo',
+    body:
+      'Idiomas, esportes, ritmos, oficinas e tecnologia já fazem parte da rotina — sem extras.',
+  },
+  {
+    number: '03',
+    title: 'Parceria com famílias',
+    body:
+      'Comunicação próxima e transparente em cada etapa. Cada família é parte do projeto educativo.',
+  },
+  {
+    number: '04',
+    title: 'Equipe que se renova',
+    body:
+      'Professores em formação contínua, sempre preparados para os desafios do tempo presente.',
+  },
+];

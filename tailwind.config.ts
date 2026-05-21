@@ -44,9 +44,24 @@ const config: Config = {
           '0%': { opacity: '0', transform: 'translateY(12px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        marqueeX: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        floatY: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-12px)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
       },
       animation: {
         'fade-up': 'fadeUp 0.7s ease-out both',
+        'marquee-x': 'marqueeX 40s linear infinite',
+        'marquee-x-slow': 'marqueeX 60s linear infinite',
+        'float-y': 'floatY 6s ease-in-out infinite',
       },
     },
   },
