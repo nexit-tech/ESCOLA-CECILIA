@@ -1,21 +1,21 @@
-import { Hero } from '@/components/Hero';
-import { StatsStrip } from '@/components/StatsStrip';
-import { Pillars } from '@/components/Pillars';
-import { Curriculum } from '@/components/Curriculum';
-import { SegmentsGrid } from '@/components/SegmentsGrid';
-import { Activities } from '@/components/Activities';
+import { HeroFullbleed } from '@/components/HeroFullbleed';
+import { Manifesto } from '@/components/Manifesto';
+import { FeaturedEnsinoMedio } from '@/components/FeaturedEnsinoMedio';
+import { EducationalPillars } from '@/components/EducationalPillars';
+import { ThreeColumns } from '@/components/ThreeColumns';
+import { SegmentsBand } from '@/components/SegmentsBand';
 import { DirectorQuote } from '@/components/DirectorQuote';
 import { CTA } from '@/components/CTA';
 
 export default function HomePage() {
   return (
     <>
-      <Hero />
-      <StatsStrip />
-      <Pillars />
-      <Curriculum />
-      <SegmentsGrid />
-      <Activities />
+      <HeroFullbleed />
+      <Manifesto />
+      <FeaturedEnsinoMedio />
+      <EducationalPillars />
+      <ThreeColumns />
+      <SegmentsBand />
       <DirectorQuote />
       <CTA />
     </>

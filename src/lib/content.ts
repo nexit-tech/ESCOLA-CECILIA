@@ -29,13 +29,82 @@ export const navigation = [
 ];
 
 export const heroContent = {
-  eyebrow: 'Desde 1992',
-  title: 'Uma educação que revela o melhor de cada aluno.',
+  eyebrow: 'Matrículas e Rematrículas abertas',
+  title: 'O lugar onde a criança aprende com afeto e cresce com propósito.',
   body:
-    'Há mais de três décadas formamos cidadãos preparados para os desafios do tempo presente — unindo tradição pedagógica, valores cristãos e as mais novas formas de ensinar e aprender.',
-  primaryCta: { label: 'Conheça nossa história', href: '/quem-somos' },
-  secondaryCta: { label: 'Agende uma visita', href: '/contato' },
+    'Educação completa, do berçário ao Ensino Médio, com valores cristãos e mais de três décadas formando gerações.',
+  primaryCta: { label: 'Agende uma visita', href: '/contato' },
+  secondaryCta: { label: 'Conheça a escola', href: '/quem-somos' },
 };
+
+export const manifesto = {
+  badge: 'Aprender sempre',
+  statement:
+    'Educação completa, do primeiro abraço ao último dia de aula. Desde 1992, formando alunos preparados para o mundo.',
+  signoff: 'Educandário Cecília Pinheiro',
+};
+
+export const featuredEnsinoMedio = {
+  badge: 'Ensino Médio',
+  title: 'Aluno preparado para o que vem depois.',
+  body:
+    'Acompanhamento próximo, orientação vocacional, simulados ENEM e um currículo robusto que combina excelência acadêmica e formação humana. A última etapa da Educação Básica é vivida aqui com profundidade e propósito.',
+  cta: { label: 'Conheça nossos segmentos', href: '/segmentos' },
+};
+
+export const educationalPillars = [
+  {
+    key: 'valores',
+    label: 'Valores Cristãos',
+    description:
+      'Princípios bíblicos que orientam a convivência, o respeito e cada decisão pedagógica.',
+  },
+  {
+    key: 'integral',
+    label: 'Formação Integral',
+    description:
+      'Cabeça, coração e mãos. Desenvolvemos o aluno em seus aspectos cognitivo, emocional e social.',
+  },
+  {
+    key: 'tecnologia',
+    label: 'Tecnologia & Inovação',
+    description:
+      'Sala oficial Google for Education, ferramentas digitais e práticas pedagógicas alinhadas à BNCC.',
+  },
+  {
+    key: 'idiomas',
+    label: 'Idiomas',
+    description:
+      'Inglês desde a Educação Infantil e Espanhol a partir do Fundamental II — incluídos na mensalidade.',
+  },
+  {
+    key: 'movimento',
+    label: 'Esporte & Cultura',
+    description:
+      'Natação, ballet, basquete, hip-hop, música, artes e literatura compõem a rotina escolar.',
+  },
+];
+
+export const threeColumns = [
+  {
+    eyebrow: 'Equipe',
+    title: 'Profissionais qualificados',
+    body:
+      'Uma equipe pedagógica em formação contínua, com experiência sólida e olhar atento a cada estudante.',
+  },
+  {
+    eyebrow: 'Currículo',
+    title: 'Alinhados à BNCC',
+    body:
+      'Matriz curricular atualizada anualmente, com material didático completo e disciplinas que dialogam entre si.',
+  },
+  {
+    eyebrow: 'Mensalidade',
+    title: 'Atividades inclusas',
+    body:
+      'Idiomas, ballet, natação, basquete, hip-hop e mais de 15 oficinas já fazem parte da mensalidade.',
+  },
+];
 
 export const pillars = [
   {
