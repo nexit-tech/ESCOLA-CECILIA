@@ -30,17 +30,17 @@ export const navigation = [
 
 export const heroContent = {
   eyebrow: 'Matrículas e Rematrículas abertas',
-  title: 'O lugar onde a criança aprende com afeto e cresce com propósito.',
+  title: 'Cecília Pinheiro: Dedicação plena ao Ensino.',
   body:
-    'Educação completa, do berçário ao Ensino Médio, com valores cristãos e mais de três décadas formando gerações.',
+    'Do Ensino Fundamental I ao Ensino Médio — preparando estudantes com excelência acadêmica, valores cristãos e mais de três décadas de tradição.',
   primaryCta: { label: 'Agende uma visita', href: '/contato' },
   secondaryCta: { label: 'Conheça a escola', href: '/quem-somos' },
 };
 
 export const manifesto = {
-  badge: 'Aprender sempre',
+  badge: 'Dedicação plena',
   statement:
-    'Educação completa, do primeiro abraço ao último dia de aula. Desde 1992, formando alunos preparados para o mundo.',
+    'Excelência no Ensino. Aprofundamento curricular. Preparação para o que vem depois. Desde 1992, formando alunos prontos para o mundo.',
   signoff: 'Educandário Cecília Pinheiro',
 };
 
@@ -50,6 +50,28 @@ export const featuredEnsinoMedio = {
   body:
     'Acompanhamento próximo, orientação vocacional, simulados ENEM e um currículo robusto que combina excelência acadêmica e formação humana. A última etapa da Educação Básica é vivida aqui com profundidade e propósito.',
   cta: { label: 'Conheça nossos segmentos', href: '/segmentos' },
+};
+
+export const featuredFundamental = {
+  badge: 'Ensino Fundamental',
+  title: 'A base sólida que faz toda a diferença.',
+  body:
+    'Do 1º ao 9º ano, alunos consolidam o domínio da língua, dos princípios matemáticos e científicos, com leitura ativa, projetos multidisciplinares e tecnologia integrada ao aprender.',
+  cta: { label: 'Sobre os segmentos', href: '/segmentos' },
+};
+
+export const activitiesShowcase = {
+  badge: 'Atividades inclusas',
+  title: 'O que cabe na mensalidade vai muito além da sala de aula.',
+  body:
+    'Ballet, basquete, hip-hop, natação, idiomas, oficinas culturais — tudo já incluso, tudo parte da rotina.',
+};
+
+export const eventsGallery = {
+  badge: 'Eventos & Vida escolar',
+  title: 'A escola que vive a comunidade.',
+  body:
+    'Feira de Profissões, Sarau Literário, Banda Marcial, festividades, ciências e cultura — momentos que marcam cada ano letivo.',
 };
 
 export const educationalPillars = [
@@ -93,16 +115,16 @@ export const threeColumns = [
       'Uma equipe pedagógica em formação contínua, com experiência sólida e olhar atento a cada estudante.',
   },
   {
+    eyebrow: 'Mensalidade',
+    title: 'Mensalidade acessível',
+    body:
+      'Idiomas, ballet, basquete, hip-hop e mais de 15 oficinas inclusas — sem extras escondidos.',
+  },
+  {
     eyebrow: 'Currículo',
     title: 'Alinhados à BNCC',
     body:
       'Matriz curricular atualizada anualmente, com material didático completo e disciplinas que dialogam entre si.',
-  },
-  {
-    eyebrow: 'Mensalidade',
-    title: 'Atividades inclusas',
-    body:
-      'Idiomas, ballet, natação, basquete, hip-hop e mais de 15 oficinas já fazem parte da mensalidade.',
   },
 ];
 
@@ -149,14 +171,6 @@ export const curriculum = {
 };
 
 export const segments = [
-  {
-    key: 'infantil',
-    label: 'Educação Infantil',
-    range: 'G3, G4 e G5',
-    description:
-      'Acolhemos as primeiras descobertas com afeto e intencionalidade pedagógica, favorecendo o desenvolvimento físico, psicológico, intelectual e social — sempre em parceria com a família.',
-    highlights: ['Letramento lúdico', 'Música e movimento', 'Inglês desde cedo'],
-  },
   {
     key: 'fund1',
     label: 'Ensino Fundamental I',
@@ -231,7 +245,7 @@ export const aboutContent = {
     'A história desta escola é, antes de tudo, uma história pessoal. Ela nasceu de um sonho antigo — um sonho que vejo se tornar real, ano após ano.',
     'No ano de 1992, com o nome de “Turminha Feliz”, iniciamos o Jardim de Infância na Rua Santa Catarina, no bairro de Vila Brasil. As instalações eram modestas, com poucas dependências, mas carregavam um propósito claro: educar com afeto e responsabilidade.',
     'Com o passar dos anos, a escola cresceu e foi renomeada como Educandário Cecília Pinheiro, em homenagem à minha querida avó. Construímos novos prédios e fomos conquistando espaço, sendo reconhecidos entre as melhores escolas da região pela qualidade do ensino e pela cumplicidade com as famílias.',
-    'Hoje, atendemos alunos da Educação Infantil ao Ensino Médio, oferecendo aulas de ballet, hip-hop, basquete, natação, inglês, espanhol, orientação vocacional e diversas outras atividades — todas incluídas na mensalidade — além de modalidades acessíveis como muay thai, escolinha de futsal e hidroginástica.',
+    'Hoje, nossa dedicação plena é com o Ensino — do Fundamental I ao Ensino Médio — oferecendo aulas de ballet, hip-hop, basquete, natação, inglês, espanhol, orientação vocacional e diversas outras atividades, todas incluídas na mensalidade.',
   ],
 };
 
@@ -379,9 +393,9 @@ export const whyCecilia = [
   },
   {
     number: '02',
-    title: 'Mensalidade que inclui tudo',
+    title: 'Mensalidade acessível',
     body:
-      'Idiomas, esportes, ritmos, oficinas e tecnologia já fazem parte da rotina — sem extras.',
+      'Idiomas, esportes, ritmos, oficinas e tecnologia já fazem parte da rotina — sem extras escondidos.',
   },
   {
     number: '03',

@@ -49,3 +49,25 @@ export const images = {
 };
 
 export const heroImage = images.structure[0];
+
+export const local = {
+  facade: images.structure[0],
+  fundamental: '/ensino-fundamental.jpeg',
+  fundamentalAlt: '/ensino-fundamental1.jpeg',
+  ensinoMedio: '/ensino-medio.jpeg',
+  fotoImportante: '/fotoimportante.jpeg',
+  infantil: '/infantil.jpeg',
+  ballet: ['/ballet1.jpeg', '/ballet2.jpeg', '/ballet3.jpeg'],
+  basquete: ['/basquete1.jpeg', '/basquete2.jpeg', '/basquete3.jpeg'],
+  eventos: [
+    '/eventos.jpeg',
+    '/eventos2.jpeg',
+    '/eventos3.jpeg',
+    '/eventos4.jpeg',
+    '/eventos5.jpeg',
+    '/eventos6.jpeg',
+    '/eventos7.jpeg',
+    '/eventos8.jpeg',
+    '/eventos9.jpeg',
+  ],
+};

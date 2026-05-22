@@ -4,14 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { segments } from '@/lib/content';
-import { images } from '@/lib/images';
+import { local } from '@/lib/images';
 import { Reveal } from './ui/Reveal';
 
 const segmentImages: Record<string, string> = {
-  infantil: images.structure[13],
-  fund1: images.structure[5],
-  fund2: images.structure[8],
-  medio: images.structure[20],
+  fund1: local.fundamentalAlt,
+  fund2: local.fundamental,
+  medio: local.ensinoMedio,
 };
 
 export function SegmentsBand() {
@@ -87,7 +86,7 @@ export function SegmentsBand() {
         >
           <div className="relative h-72 w-56 overflow-hidden rounded-2xl shadow-soft ring-1 ring-ink/10">
             <Image
-              src={segmentImages[hovered] ?? images.structure[0]}
+              src={segmentImages[hovered] ?? local.facade}
               alt=""
               fill
               sizes="224px"

@@ -1,10 +1,14 @@
 import { HeroFullbleed } from '@/components/HeroFullbleed';
 import { Manifesto } from '@/components/Manifesto';
 import { StatsCounter } from '@/components/StatsCounter';
-import { MarqueeStrip } from '@/components/MarqueeStrip';
+import { FeaturedFundamental } from '@/components/FeaturedFundamental';
 import { FeaturedEnsinoMedio } from '@/components/FeaturedEnsinoMedio';
+import { TechHighlight } from '@/components/TechHighlight';
+import { MarqueeStrip } from '@/components/MarqueeStrip';
+import { ActivitiesShowcase } from '@/components/ActivitiesShowcase';
 import { EducationalPillars } from '@/components/EducationalPillars';
 import { WhyCecilia } from '@/components/WhyCecilia';
+import { EventsGallery } from '@/components/EventsGallery';
 import { ThreeColumns } from '@/components/ThreeColumns';
 import { SegmentsBand } from '@/components/SegmentsBand';
 import { Testimonials } from '@/components/Testimonials';
@@ -17,10 +21,14 @@ export default function HomePage() {
       <HeroFullbleed />
       <Manifesto />
       <StatsCounter />
+      <FeaturedFundamental />
       <FeaturedEnsinoMedio />
+      <TechHighlight />
+      <ActivitiesShowcase />
       <MarqueeStrip />
-      <EducationalPillars />
       <WhyCecilia />
+      <EventsGallery />
+      <EducationalPillars />
       <ThreeColumns />
       <SegmentsBand />
       <Testimonials />

@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { featuredEnsinoMedio } from '@/lib/content';
-import { images } from '@/lib/images';
+import { local } from '@/lib/images';
 import { Reveal } from './ui/Reveal';
 
-const FEATURE_IMAGE = images.structure[20];
+const FEATURE_IMAGE = local.ensinoMedio;
 
 export function FeaturedEnsinoMedio() {
   return (
