@@ -28,32 +28,32 @@
 
 @layer components {
   .container-tight {
-    @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 md:px-10;
   }
 
   .container-wide {
-    @apply mx-auto w-full max-w-7xl px-6 md:px-10;
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 md:px-10;
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-gold-deep font-semibold;
+    @apply inline-flex items-center gap-2 text-[10px] sm:text-xs uppercase tracking-[0.22em] sm:tracking-[0.28em] text-gold-deep font-semibold;
   }
 
   .eyebrow::before {
     content: '';
-    @apply block h-px w-8 bg-gold;
+    @apply block h-px w-6 sm:w-8 bg-gold;
   }
 
   .display-1 {
-    @apply font-serif text-4xl leading-[1.1] md:text-6xl lg:text-7xl tracking-tight;
+    @apply font-serif text-[2.25rem] leading-[1.08] sm:text-5xl md:text-6xl lg:text-7xl tracking-tight;
   }
 
   .display-2 {
-    @apply font-serif text-3xl leading-[1.15] md:text-5xl tracking-tight;
+    @apply font-serif text-[1.75rem] leading-[1.12] sm:text-3xl md:text-5xl tracking-tight;
   }
 
   .lede {
-    @apply text-lg md:text-xl text-ink/75 leading-relaxed;
+    @apply text-base sm:text-lg md:text-xl text-ink/75 leading-relaxed;
   }
 
   .btn-primary {
@@ -82,5 +82,43 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Mobile-only: bloqueia scroll horizontal e melhora legibilidade */
+  @media (max-width: 640px) {
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      -webkit-text-size-adjust: 100%;
+    }
+  }
+
+  /* Touch targets: garante 44px mínimo em mobile (WCAG) */
+  @media (max-width: 768px) {
+    button, a[href], [role="button"] {
+      min-height: 44px;
+    }
+    .touch-tight {
+      min-height: auto;
+    }
+  }
+
+  /* Anima entrada de scroll-snap em galerias mobile */
+  .snap-x-mobile {
+    @apply md:overflow-visible;
+  }
+  @media (max-width: 768px) {
+    .snap-x-mobile {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+    }
+    .snap-x-mobile::-webkit-scrollbar {
+      display: none;
+    }
+    .snap-x-mobile > * {
+      scroll-snap-align: start;
+    }
   }
 }

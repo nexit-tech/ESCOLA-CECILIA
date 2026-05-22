@@ -29,12 +29,12 @@ export const navigation = [
 ];
 
 export const heroContent = {
-  eyebrow: 'Matrículas e Rematrículas abertas',
+  eyebrow: 'Educandário desde 1992',
   title: 'Cecília Pinheiro: Dedicação plena ao Ensino.',
   body:
     'Do Ensino Fundamental I ao Ensino Médio — preparando estudantes com excelência acadêmica, valores cristãos e mais de três décadas de tradição.',
-  primaryCta: { label: 'Agende uma visita', href: '/contato' },
-  secondaryCta: { label: 'Conheça a escola', href: '/quem-somos' },
+  primaryCta: { label: 'Conheça a escola', href: '/estrutura' },
+  secondaryCta: { label: 'Agende uma visita', href: '/contato' },
 };
 
 export const manifesto = {
@@ -65,6 +65,13 @@ export const activitiesShowcase = {
   title: 'O que cabe na mensalidade vai muito além da sala de aula.',
   body:
     'Ballet, basquete, hip-hop, natação, idiomas, oficinas culturais — tudo já incluso, tudo parte da rotina.',
+};
+
+export const mascots = {
+  badge: 'Mascotes',
+  title: 'Conheça Cecilinha e Lipe.',
+  body:
+    'Nossos mascotes acompanham o dia a dia da escola, presentes na identidade visual, nos eventos e no carinho com cada estudante. Eles representam o espírito acolhedor e divertido do Cecília Pinheiro.',
 };
 
 export const eventsGallery = {
@@ -152,21 +159,58 @@ export const pillars = [
 export const curriculum = {
   eyebrow: 'Matriz Curricular',
   title: 'Um currículo que dialoga com o mundo.',
-  body: [
-    'O Cecília Pinheiro investe em práticas pedagógicas que buscam a formação integral dos nossos alunos, ampliando suas capacidades individuais e coletivas.',
-    'Estamos alinhados à Base Nacional Comum Curricular e contamos com uma equipe altamente qualificada, que trabalha de maneira acolhedora e responsável.',
-    'Com valores cristãos como alicerce, apostamos em um ensino mediado por tecnologia e inovação, com material didático completo e atualizado anualmente.',
+  lede: 'Nove áreas de conhecimento articuladas ao longo de toda a jornada escolar — do Fundamental I ao Ensino Médio, em diálogo constante com a Base Nacional Comum Curricular.',
+  stats: [
+    { value: '09', label: 'Áreas integradas' },
+    { value: 'BNCC', label: 'Alinhamento total' },
+    { value: 'Anual', label: 'Material atualizado' },
   ],
   subjects: [
-    'Identidade e Autonomia',
-    'Linguagem e Escrita',
-    'Línguas Estrangeiras',
-    'Educação Ambiental',
-    'Empreendedorismo',
-    'Artes Visuais e Cultura',
-    'Natureza e Sociedade',
-    'Música & Movimento',
-    'Tecnologia',
+    {
+      key: 'identidade',
+      title: 'Identidade & Autonomia',
+      body: 'Autoconhecimento, escuta e protagonismo desde os primeiros anos.',
+    },
+    {
+      key: 'linguagem',
+      title: 'Linguagem & Escrita',
+      body: 'Domínio da língua falada e escrita como pilar do aprendizado.',
+    },
+    {
+      key: 'idiomas',
+      title: 'Línguas Estrangeiras',
+      body: 'Inglês desde o Fundamental I, Espanhol a partir do 6º ano.',
+    },
+    {
+      key: 'ambiente',
+      title: 'Educação Ambiental',
+      body: 'Consciência ecológica e responsabilidade coletiva.',
+    },
+    {
+      key: 'empreender',
+      title: 'Empreendedorismo',
+      body: 'Projetos práticos, feiras e cultura de iniciativa.',
+    },
+    {
+      key: 'artes',
+      title: 'Artes Visuais & Cultura',
+      body: 'Expressão criativa, repertório artístico e leitura de mundo.',
+    },
+    {
+      key: 'natureza',
+      title: 'Natureza & Sociedade',
+      body: 'Ciências da natureza, história e formação cidadã.',
+    },
+    {
+      key: 'musica',
+      title: 'Música & Movimento',
+      body: 'Sensibilidade musical e expressão corporal integradas.',
+    },
+    {
+      key: 'tecnologia',
+      title: 'Tecnologia',
+      body: 'Sala Google for Education e letramento digital.',
+    },
   ],
 };
 
@@ -175,25 +219,55 @@ export const segments = [
     key: 'fund1',
     label: 'Ensino Fundamental I',
     range: '1º ao 5º ano',
+    ageRange: '6 a 10 anos',
+    duration: '5 anos',
+    chapter: 'Capítulo 01',
+    tagline: 'A descoberta do mundo letrado.',
     description:
       'Nessa etapa, os alunos desenvolvem habilidades e competências que serão aprimoradas ao longo da vida escolar: domínio da língua falada e escrita, princípios matemáticos, noções de espaço, tempo e ciência — junto ao fortalecimento de vínculos de amizade e respeito mútuo.',
-    highlights: ['Sala Google Education', 'Literatura e leitura ativa', 'Educação financeira'],
+    highlights: [
+      { title: 'Sala Google Education', body: 'Tecnologia no dia a dia da turma' },
+      { title: 'Literatura e leitura ativa', body: 'Hábito de leitura formado cedo' },
+      { title: 'Educação financeira', body: 'Conceitos práticos e idade-adequados' },
+      { title: 'Inglês incluído', body: 'Aulas regulares ao longo do ano' },
+    ],
+    pillars: ['Letramento', 'Numeramento', 'Convivência', 'Curiosidade'],
   },
   {
     key: 'fund2',
     label: 'Ensino Fundamental II',
     range: '6º ao 9º ano',
+    ageRange: '11 a 14 anos',
+    duration: '4 anos',
+    chapter: 'Capítulo 02',
+    tagline: 'Aprofundamento e amadurecimento.',
     description:
       'Período de aprofundamento e amadurecimento intelectual. Os alunos contam com preparação cuidadosa para o Ensino Médio, conceitos mais complexos e atividades complementares que ampliam a experiência escolar.',
-    highlights: ['Espanhol', 'Empreendedorismo', 'Projetos multidisciplinares'],
+    highlights: [
+      { title: 'Espanhol incluído', body: 'Segunda língua a partir do 6º ano' },
+      { title: 'Empreendedorismo', body: 'Projetos práticos com feira anual' },
+      { title: 'Projetos multidisciplinares', body: 'Disciplinas dialogam entre si' },
+      { title: 'Educação financeira', body: 'Aprofundamento da formação cidadã' },
+    ],
+    pillars: ['Autonomia', 'Pensamento crítico', 'Argumentação', 'Pesquisa'],
   },
   {
     key: 'medio',
     label: 'Ensino Médio',
     range: '1ª à 3ª série',
+    ageRange: '15 a 17 anos',
+    duration: '3 anos',
+    chapter: 'Capítulo 03',
+    tagline: 'Preparados para o que vem depois.',
     description:
       'Etapa final da Educação Básica, dedicada a aprofundar conhecimentos e preparar o estudante para o vestibular, o ENEM e a vida profissional — formando cidadãos críticos, autônomos e prontos para o Ensino Superior.',
-    highlights: ['Simulados ENEM', 'Orientação vocacional', 'Feira de Profissões'],
+    highlights: [
+      { title: 'Simulados ENEM', body: 'Avaliações periódicas e devolutivas' },
+      { title: 'Orientação vocacional', body: 'Acompanhamento individual' },
+      { title: 'Feira de Profissões', body: 'Contato direto com carreiras' },
+      { title: 'Plantões de dúvidas', body: 'Acolhimento até o vestibular' },
+    ],
+    pillars: ['Excelência acadêmica', 'Vocação', 'ENEM', 'Cidadania'],
   },
 ];
 

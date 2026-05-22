@@ -1,6 +1,5 @@
 import { PageHero } from '@/components/PageHero';
 import { Activities } from '@/components/Activities';
-import { CTA } from '@/components/CTA';
 
 export const metadata = {
   title: 'Atividades — Educandário Cecília Pinheiro',
@@ -20,7 +19,6 @@ export default function AtividadesPage() {
         body="Atividades educacionais, esportivas e artísticas integradas à rotina escolar — a maior parte incluída na mensalidade."
       />
       <Activities />
-      <CTA />
     </>
   );
 }

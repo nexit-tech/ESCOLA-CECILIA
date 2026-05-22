@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import { PageHero } from '@/components/PageHero';
 import { Pillars } from '@/components/Pillars';
-import { CTA } from '@/components/CTA';
 import { aboutContent } from '@/lib/content';
-import { images } from '@/lib/images';
+import { local } from '@/lib/images';
 
 export const metadata = {
   title: 'Quem Somos — Educandário Cecília Pinheiro',
@@ -28,7 +27,7 @@ export default function QuemSomosPage() {
           <aside className="lg:col-span-4 lg:sticky lg:top-28">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-soft ring-1 ring-ink/10">
               <Image
-                src={images.director}
+                src={local.diretora}
                 alt={aboutContent.director}
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
@@ -53,7 +52,6 @@ export default function QuemSomosPage() {
       </section>
 
       <Pillars />
-      <CTA />
     </>
   );
 }

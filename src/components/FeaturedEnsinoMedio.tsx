@@ -18,7 +18,7 @@ export function FeaturedEnsinoMedio() {
         aria-hidden
       />
 
-      <div className="container-wide relative py-28 md:py-40 grid gap-16 lg:grid-cols-12 items-center">
+      <div className="container-wide relative py-16 sm:py-24 md:py-40 grid gap-10 lg:gap-16 lg:grid-cols-12 items-center">
         <div className="lg:col-span-6 text-cream">
           <Reveal>
             <div className="inline-flex items-center gap-3 rounded-full border border-gold-light/30 bg-cream/5 px-5 py-2 text-[10px] uppercase tracking-[0.32em] text-gold-light backdrop-blur-md">
@@ -28,7 +28,7 @@ export function FeaturedEnsinoMedio() {
           </Reveal>
 
           <Reveal delay={120}>
-            <h2 className="mt-7 font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.04] tracking-tight text-balance text-cream">
+            <h2 className="mt-5 sm:mt-7 font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.08] tracking-tight text-balance text-cream">
               {featuredEnsinoMedio.title.split(' ').map((word, i, arr) =>
                 i === arr.length - 1 ? (
                   <span key={i} className="italic font-accent text-gold-light"> {word}</span>
@@ -96,14 +96,14 @@ export function FeaturedEnsinoMedio() {
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
             </div>
 
-            <div className="absolute -bottom-6 -left-6 rounded-2xl bg-cream text-ink px-6 py-5 shadow-soft ring-1 ring-ink/5 max-w-[240px] animate-float-y">
+            <div className="hidden md:block absolute -bottom-6 -left-6 rounded-2xl bg-cream text-ink px-6 py-5 shadow-soft ring-1 ring-ink/5 max-w-[240px] animate-float-y">
               <p className="font-serif text-xl leading-tight">
                 Preparados para o que vem depois.
               </p>
               <p className="mt-2 text-xs text-ink/55">— Equipe pedagógica</p>
             </div>
 
-            <div className="absolute -top-6 -right-6 hidden md:flex h-24 w-24 items-center justify-center rounded-full bg-gold-light text-ink font-serif text-2xl shadow-soft animate-float-y" style={{ animationDelay: '1s' }}>
+            <div className="hidden md:flex absolute -top-6 -right-6 h-24 w-24 items-center justify-center rounded-full bg-gold-light text-ink font-serif text-2xl shadow-soft animate-float-y" style={{ animationDelay: '1s' }}>
               ENEM
             </div>
           </div>

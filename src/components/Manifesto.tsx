@@ -13,14 +13,14 @@ export function Manifesto() {
         aria-hidden
       />
 
-      <div className="container-wide py-28 md:py-40 relative">
+      <div className="container-wide py-16 sm:py-24 md:py-40 relative">
         <div className="mx-auto max-w-5xl text-ink">
           <Reveal direction="up">
             <p className="eyebrow">{manifesto.badge}</p>
           </Reveal>
 
           <Reveal direction="up" delay={120}>
-            <p className="mt-10 font-serif text-3xl md:text-5xl lg:text-[3.75rem] leading-[1.08] tracking-tight text-balance text-ink">
+            <p className="mt-6 sm:mt-10 font-serif text-2xl sm:text-3xl md:text-5xl lg:text-[3.75rem] leading-[1.12] tracking-tight text-balance text-ink">
               {manifesto.statement.split('. ').map((sentence, i, arr) => (
                 <span key={i} className="block">
                   {sentence}
@@ -31,9 +31,9 @@ export function Manifesto() {
           </Reveal>
 
           <Reveal direction="left" delay={300}>
-            <div className="mt-14 flex items-center gap-5">
-              <span className="block h-px w-16 bg-gold-deep" />
-              <p className="font-accent italic text-xl md:text-2xl text-gold-deep">
+            <div className="mt-10 sm:mt-14 flex items-center gap-3 sm:gap-5">
+              <span className="block h-px w-10 sm:w-16 bg-gold-deep" />
+              <p className="font-accent italic text-lg sm:text-xl md:text-2xl text-gold-deep">
                 {manifesto.signoff}
               </p>
             </div>

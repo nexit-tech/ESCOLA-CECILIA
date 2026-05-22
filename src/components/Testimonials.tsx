@@ -24,15 +24,15 @@ export function Testimonials() {
 
   return (
     <section
-      className="bg-cream-deep py-28 md:py-36"
+      className="bg-cream-deep py-14 sm:py-20 md:py-36"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
       <div className="container-wide">
         <Reveal>
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
             <p className="eyebrow justify-center">Famílias Cecília</p>
-            <h2 className="mt-6 font-serif text-4xl md:text-6xl leading-[1.05] tracking-tight text-balance text-ink">
+            <h2 className="mt-5 sm:mt-6 font-serif text-3xl sm:text-4xl md:text-6xl leading-[1.08] tracking-tight text-balance text-ink">
               Quem viveu, conta com{' '}
               <span className="italic font-accent text-gold-deep">propriedade</span>.
             </h2>
@@ -41,13 +41,13 @@ export function Testimonials() {
 
         <div className="relative mx-auto max-w-4xl">
           <span
-            className="absolute -top-8 -left-2 md:-left-12 font-serif text-[14rem] md:text-[18rem] leading-none text-gold/30 pointer-events-none select-none"
+            className="absolute -top-4 sm:-top-8 left-0 sm:-left-2 md:-left-12 font-serif text-[8rem] sm:text-[12rem] md:text-[18rem] leading-none text-gold/25 pointer-events-none select-none"
             aria-hidden
           >
             “
           </span>
 
-          <div className="relative min-h-[280px] md:min-h-[260px]">
+          <div className="relative min-h-[340px] sm:min-h-[280px] md:min-h-[260px]">
             {testimonials.map((t, i) => (
               <blockquote
                 key={t.author}
@@ -58,7 +58,7 @@ export function Testimonials() {
                 }`}
                 aria-hidden={active !== i}
               >
-                <p className="font-serif text-2xl md:text-[1.95rem] leading-[1.35] text-ink text-balance relative">
+                <p className="font-serif text-xl sm:text-2xl md:text-[1.95rem] leading-[1.4] text-ink text-balance relative">
                   {t.quote}
                 </p>
                 <footer className="mt-10 flex items-center gap-5">

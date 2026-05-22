@@ -1,16 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { aboutContent } from '@/lib/content';
-import { images } from '@/lib/images';
+import { local } from '@/lib/images';
 
 export function DirectorQuote() {
   return (
-    <section className="bg-cream py-24 md:py-32">
-      <div className="container-tight grid gap-12 lg:grid-cols-12 items-center">
+    <section className="bg-cream py-14 sm:py-20 md:py-32">
+      <div className="container-tight grid gap-10 lg:gap-12 lg:grid-cols-12 items-center">
         <div className="lg:col-span-5">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-soft ring-1 ring-ink/10">
             <Image
-              src={images.director}
+              src={local.diretora}
               alt={`${aboutContent.director}, diretora geral`}
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"

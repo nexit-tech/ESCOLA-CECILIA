@@ -5,8 +5,8 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-24 bg-ink text-cream">
-      <div className="container-wide grid gap-12 py-16 md:grid-cols-3">
+    <footer className="relative mt-16 sm:mt-24 bg-ink text-cream" data-nav-theme="dark">
+      <div className="container-wide grid gap-10 sm:gap-12 py-12 sm:py-16 md:grid-cols-3">
         <div>
           <p className="eyebrow text-gold">Educandário</p>
           <h3 className="mt-3 font-serif text-2xl text-cream">Cecília Pinheiro</h3>

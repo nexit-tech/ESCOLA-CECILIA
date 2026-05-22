@@ -1,44 +1,92 @@
-import Image from 'next/image';
 import { curriculum } from '@/lib/content';
-import { images } from '@/lib/images';
+import { curriculumIconMap } from './icons/CurriculumIcons';
+import { Reveal } from './ui/Reveal';
 
 export function Curriculum() {
   return (
-    <section className="relative bg-cream">
-      <div className="container-wide py-24 md:py-32 grid gap-16 lg:grid-cols-12 items-center">
-        <div className="lg:col-span-5 order-2 lg:order-1">
-          <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-soft ring-1 ring-ink/5">
-            <Image
-              src={images.curriculum}
-              alt="Matriz curricular Cecília Pinheiro"
-              fill
-              sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-contain bg-white p-8"
-            />
-          </div>
+    <section className="relative bg-cream-deep py-20 md:py-32 overflow-hidden">
+      <div
+        className="absolute -top-32 -left-32 h-[420px] w-[420px] rounded-full bg-gold/10 blur-3xl pointer-events-none"
+        aria-hidden
+      />
+      <div
+        className="absolute bottom-0 -right-32 h-[360px] w-[360px] rounded-full bg-gold-deep/10 blur-3xl pointer-events-none"
+        aria-hidden
+      />
+
+      <div className="container-wide relative">
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-end mb-14 md:mb-20">
+          <Reveal className="lg:col-span-7">
+            <p className="eyebrow">{curriculum.eyebrow}</p>
+            <h2 className="mt-5 md:mt-6 font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-balance text-ink">
+              Um currículo que dialoga{' '}
+              <span className="italic font-accent text-gold-deep">com o mundo</span>.
+            </h2>
+          </Reveal>
+          <Reveal className="lg:col-span-5" delay={180}>
+            <p className="text-base md:text-lg text-ink/70 leading-relaxed">
+              {curriculum.lede}
+            </p>
+          </Reveal>
         </div>
 
-        <div className="lg:col-span-7 order-1 lg:order-2">
-          <p className="eyebrow">{curriculum.eyebrow}</p>
-          <h2 className="display-2 mt-5 text-balance">{curriculum.title}</h2>
-          <div className="mt-6 space-y-4 text-ink/75 leading-relaxed">
-            {curriculum.body.map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
+        <Reveal>
+          <div className="grid grid-cols-3 divide-x divide-ink/10 border-y border-ink/10 mb-14 md:mb-20">
+            {curriculum.stats.map((stat) => (
+              <div key={stat.label} className="px-4 md:px-6 py-6 md:py-8 text-center">
+                <p className="font-serif text-3xl md:text-5xl text-ink leading-none">
+                  {stat.value}
+                </p>
+                <p className="mt-3 text-[10px] md:text-xs uppercase tracking-[0.22em] text-ink/55">
+                  {stat.label}
+                </p>
+              </div>
             ))}
           </div>
+        </Reveal>
 
-          <ul className="mt-10 grid gap-3 sm:grid-cols-2">
-            {curriculum.subjects.map((subject) => (
-              <li
-                key={subject}
-                className="flex items-center gap-3 rounded-xl bg-white/70 px-4 py-3 ring-1 ring-ink/5"
-              >
-                <span className="block h-1.5 w-1.5 rounded-full bg-gold" />
-                <span className="font-serif italic text-ink/85">{subject}</span>
-              </li>
-            ))}
-          </ul>
+        <div className="grid gap-px bg-ink/10 rounded-2xl overflow-hidden ring-1 ring-ink/10 sm:grid-cols-2 lg:grid-cols-3">
+          {curriculum.subjects.map((subject, i) => {
+            const Icon = curriculumIconMap[subject.key as keyof typeof curriculumIconMap];
+            return (
+              <Reveal key={subject.key} delay={i * 60}>
+                <article className="group relative h-full flex flex-col bg-cream p-7 md:p-8 transition-colors hover:bg-white">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="text-gold-deep transition-transform duration-700 group-hover:rotate-6 group-hover:scale-110">
+                      <Icon className="h-9 w-9 md:h-10 md:w-10" />
+                    </span>
+                    <span className="font-mono text-[10px] tracking-widest text-ink/35">
+                      {String(i + 1).padStart(2, '0')} / 09
+                    </span>
+                  </div>
+                  <h3 className="mt-6 font-serif text-lg md:text-xl text-ink leading-tight transition-colors group-hover:text-gold-deep">
+                    {subject.title}
+                  </h3>
+                  <p className="mt-3 text-sm text-ink/65 leading-relaxed flex-1">
+                    {subject.body}
+                  </p>
+
+                  <span
+                    className="absolute bottom-0 left-0 h-px w-0 bg-gold-deep transition-[width] duration-700 group-hover:w-full"
+                    aria-hidden
+                  />
+                </article>
+              </Reveal>
+            );
+          })}
         </div>
+
+        <Reveal delay={200}>
+          <div className="mt-14 md:mt-20 grid gap-10 lg:grid-cols-12 items-start">
+            <div className="lg:col-span-1 hidden lg:block">
+              <span className="block h-px w-12 bg-gold-deep mt-3" aria-hidden />
+            </div>
+            <p className="lg:col-span-11 font-accent italic text-xl md:text-2xl lg:text-3xl leading-relaxed text-ink/85">
+              “Com valores cristãos como alicerce, apostamos em um ensino mediado por
+              tecnologia e inovação — com material didático completo e atualizado anualmente.”
+            </p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

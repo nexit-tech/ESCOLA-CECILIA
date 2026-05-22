@@ -22,11 +22,11 @@ export function SegmentsBand() {
       className="relative bg-cream border-t border-ink/10 overflow-hidden"
       onMouseMove={(e) => setPointer({ x: e.clientX, y: e.clientY })}
     >
-      <div className="container-wide py-28 md:py-40 relative">
-        <div className="grid gap-12 lg:grid-cols-12 lg:items-end mb-16">
+      <div className="container-wide py-14 sm:py-20 md:py-40 relative">
+        <div className="grid gap-6 sm:gap-12 lg:grid-cols-12 lg:items-end mb-10 sm:mb-16">
           <Reveal className="lg:col-span-7">
             <p className="eyebrow">Segmentos</p>
-            <h2 className="mt-6 font-serif text-4xl md:text-6xl leading-[1.05] tracking-tight text-balance text-ink">
+            <h2 className="mt-5 sm:mt-6 font-serif text-3xl sm:text-4xl md:text-6xl leading-[1.1] tracking-tight text-balance text-ink">
               Da Educação Infantil ao{' '}
               <span className="italic font-accent text-gold-deep">Ensino Médio</span>.
             </h2>
@@ -54,7 +54,7 @@ export function SegmentsBand() {
                   <span className="relative col-span-1 font-mono text-xs tracking-widest text-ink/40 transition-colors group-hover:text-gold-deep">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <h3 className="relative col-span-11 md:col-span-5 font-serif text-2xl md:text-4xl text-ink leading-tight transition-transform group-hover:translate-x-2">
+                  <h3 className="relative col-span-11 md:col-span-5 font-serif text-xl sm:text-2xl md:text-4xl text-ink leading-tight transition-transform group-hover:translate-x-2">
                     {seg.label}
                   </h3>
                   <p className="hidden md:block relative md:col-span-3 text-sm uppercase tracking-[0.18em] text-gold-deep">

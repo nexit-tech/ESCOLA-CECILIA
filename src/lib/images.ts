@@ -57,6 +57,12 @@ export const local = {
   ensinoMedio: '/ensino-medio.jpeg',
   fotoImportante: '/fotoimportante.jpeg',
   infantil: '/infantil.jpeg',
+  diretora: '/diretora.jpeg',
+  mascotes: {
+    juntos: '/mascotes.jpeg',
+    cecilinha: '/mascotececilinha.jpeg',
+    lipe: '/mascotelipe.jpeg',
+  },
   ballet: ['/ballet1.jpeg', '/ballet2.jpeg', '/ballet3.jpeg'],
   basquete: ['/basquete1.jpeg', '/basquete2.jpeg', '/basquete3.jpeg'],
   eventos: [

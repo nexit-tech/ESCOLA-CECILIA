@@ -1,7 +1,6 @@
 import { PageHero } from '@/components/PageHero';
-import { SegmentsGrid } from '@/components/SegmentsGrid';
+import { SegmentsJourney } from '@/components/SegmentsJourney';
 import { Curriculum } from '@/components/Curriculum';
-import { CTA } from '@/components/CTA';
 
 export const metadata = {
   title: 'Segmentos — Educandário Cecília Pinheiro',
@@ -18,11 +17,10 @@ export default function SegmentosPage() {
             <span className="italic font-accent text-gold-deep">um cuidado próprio</span>.
           </>
         }
-        body="Da Educação Infantil ao Ensino Médio, nossa proposta pedagógica acompanha cada fase com atenção, escuta e profundidade."
+        body="Do 1º ano do Fundamental à 3ª série do Ensino Médio — três etapas, uma continuidade pedagógica."
       />
-      <SegmentsGrid compact />
+      <SegmentsJourney />
       <Curriculum />
-      <CTA />
     </>
   );
 }

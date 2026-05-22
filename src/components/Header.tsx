@@ -67,10 +67,6 @@ export function Header() {
     ? 'text-cream/85 hover:text-gold-light after:bg-gold-light'
     : 'text-ink/80 hover:text-gold-deep after:bg-gold';
 
-  const ctaClass = isDark
-    ? 'inline-flex items-center justify-center gap-2 rounded-full bg-cream text-ink px-6 py-3 text-sm font-semibold tracking-wide transition-all hover:bg-gold-light hover:text-ink focus:outline-none focus:ring-2 focus:ring-gold-light focus:ring-offset-2 focus:ring-offset-ink'
-    : 'btn-primary';
-
   const hamburgerClass = isDark
     ? 'border-cream/30 text-cream'
     : 'border-ink/15 text-ink';
@@ -86,8 +82,8 @@ export function Header() {
       data-theme={theme}
       className={`sticky top-0 z-50 transition-[background-color,border-color,box-shadow] duration-500 ${headerBgClass}`}
     >
-      <div className="container-wide flex items-center justify-between py-4 md:py-5">
-        <Link href="/" className="flex items-center" aria-label={school.name}>
+      <div className="container-wide grid grid-cols-2 lg:grid-cols-3 items-center py-4 md:py-5">
+        <Link href="/" className="flex items-center justify-self-start" aria-label={school.name}>
           <Image
             src={images.logo}
             alt={school.name}
@@ -95,35 +91,29 @@ export function Header() {
             height={240}
             sizes="(max-width: 768px) 96px, 120px"
             priority
-            className={`h-14 w-auto md:h-16 object-contain transition-[filter] duration-500 ${
-              isDark ? 'brightness-0 invert' : ''
-            }`}
+            className="h-14 w-auto md:h-16 object-contain"
           />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8" aria-label="Menu principal">
+        <nav className="hidden lg:flex items-center justify-center gap-8" aria-label="Menu principal">
           {navigation.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`text-sm font-medium transition-colors duration-500 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:transition-all hover:after:w-full ${navLinkClass}`}
+              className={`whitespace-nowrap text-sm font-medium transition-colors duration-500 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:transition-all hover:after:w-full ${navLinkClass}`}
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden lg:block">
-          <Link href="/contato" className={`${ctaClass} transition-colors duration-500`}>
-            Matrículas Abertas
-          </Link>
-        </div>
+        <span aria-hidden className="hidden lg:block" />
 
         <button
           aria-label="Abrir menu"
           aria-expanded={open}
           onClick={() => setOpen((s) => !s)}
-          className={`lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border transition-colors duration-500 ${hamburgerClass}`}
+          className={`lg:hidden justify-self-end inline-flex h-11 w-11 items-center justify-center rounded-full border transition-colors duration-500 ${hamburgerClass}`}
         >
           <span className="sr-only">Menu</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -163,13 +153,6 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/contato"
-              onClick={() => setOpen(false)}
-              className={`${ctaClass} mt-4 w-full`}
-            >
-              Matrículas Abertas
-            </Link>
           </nav>
         </div>
       )}

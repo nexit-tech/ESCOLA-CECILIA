@@ -4,13 +4,13 @@ import { Reveal } from './ui/Reveal';
 export function ThreeColumns() {
   return (
     <section className="bg-cream-deep">
-      <div className="container-wide py-28 md:py-36">
-        <div className="grid gap-x-12 gap-y-14 md:grid-cols-3 md:divide-x divide-ink/10">
+      <div className="container-wide py-14 sm:py-20 md:py-36">
+        <div className="grid gap-x-10 lg:gap-x-12 gap-y-10 md:gap-y-14 md:grid-cols-3 md:divide-x divide-ink/10">
           {threeColumns.map((col, i) => (
             <Reveal key={col.title} delay={i * 160}>
               <article className={`group ${i === 0 ? '' : 'md:pl-12'}`}>
                 <p className="eyebrow">{col.eyebrow}</p>
-                <h3 className="mt-6 font-serif text-3xl md:text-4xl text-ink leading-tight transition-colors group-hover:text-gold-deep">
+                <h3 className="mt-5 sm:mt-6 font-serif text-2xl sm:text-3xl md:text-4xl text-ink leading-tight transition-colors group-hover:text-gold-deep">
                   {col.title}
                 </h3>
                 <p className="mt-5 text-ink/70 leading-relaxed">{col.body}</p>

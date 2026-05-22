@@ -1,6 +1,5 @@
-import { FeaturedCarousel } from '@/components/FeaturedCarousel';
+import { StructureIntro } from '@/components/StructureIntro';
 import { GalleryGrid } from '@/components/GalleryGrid';
-import { CTA } from '@/components/CTA';
 
 export const metadata = {
   title: 'Estrutura — Educandário Cecília Pinheiro',
@@ -9,9 +8,8 @@ export const metadata = {
 export default function EstruturaPage() {
   return (
     <>
-      <FeaturedCarousel />
+      <StructureIntro />
       <GalleryGrid />
-      <CTA />
     </>
   );
 }
