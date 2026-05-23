@@ -58,6 +58,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
         />
         <link rel="dns-prefetch" href="https://pub-2f61a9552bab449495b240463abcaa31.r2.dev" />
+        <link
+          rel="preload"
+          as="image"
+          href="https://yata-apix-f86015e4-b0f0-46cb-93d0-ebd6a0cb6dd7.s3-object.locaweb.com.br/18355a5158e44d5db2b1754c80123e7d.jpg"
+          fetchPriority="high"
+        />
       </head>
       <body className="min-h-screen bg-cream text-ink antialiased">
         <a

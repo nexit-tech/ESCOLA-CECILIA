@@ -31,7 +31,7 @@ export function FeaturedEnsinoMedio() {
               fill
               sizes="(max-width: 768px) 100vw, 80vw"
               className="object-cover object-top"
-              priority={false}
+              loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
           </div>

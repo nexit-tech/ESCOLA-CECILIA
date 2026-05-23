@@ -4,6 +4,7 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -18,10 +19,6 @@ const nextConfig = {
         hostname: 'pub-2f61a9552bab449495b240463abcaa31.r2.dev',
       },
     ],
-    formats: ['image/avif', 'image/webp'],
-    minimumCacheTTL: 60 * 60 * 24 * 30, // 30 dias
-    deviceSizes: [360, 640, 750, 828, 1080, 1200, 1440, 1920, 2400],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
 };
 
