@@ -26,7 +26,7 @@ export function StructureIntro() {
             <p className="eyebrow">Nossa estrutura</p>
             <h1 className="mt-5 md:mt-6 font-serif text-[2.25rem] sm:text-4xl md:text-6xl lg:text-7xl leading-[1.06] tracking-tight text-balance text-ink">
               Cada espaço pensado para{' '}
-              <span className="italic font-accent text-gold-deep">aprender com presença</span>.
+              <span className="italic font-accent text-gold-deep">acolher e ensinar</span>.
             </h1>
           </Reveal>
           <Reveal className="lg:col-span-5" delay={180}>

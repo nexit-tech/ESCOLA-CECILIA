@@ -19,7 +19,7 @@ export default function QuemSomosPage() {
             <span className="italic font-accent text-gold-deep">constante evolução</span>.
           </>
         }
-        body={`Desde 1992, formamos gerações com afeto, responsabilidade e excelência.`}
+        body={`Desde 1992, formamos gerações com afeto e responsabilidade pedagógica.`}
       />
 
       <section className="bg-cream py-20 md:py-28">
