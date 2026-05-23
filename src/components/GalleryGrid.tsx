@@ -2,17 +2,13 @@
 
 import Image from 'next/image';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { structureSpaces } from '@/lib/content';
 import { images } from '@/lib/images';
 
 const SWIPE_THRESHOLD = 50;
 
 export function GalleryGrid() {
   const items = useMemo(
-    () =>
-      structureSpaces
-        .map((_, i) => images.structure[i])
-        .filter((src): src is string => Boolean(src)),
+    () => images.structure.filter((src): src is string => Boolean(src)),
     [],
   );
 

@@ -15,18 +15,13 @@ export function Curriculum() {
       />
 
       <div className="container-wide relative">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-end mb-14 md:mb-20">
-          <Reveal className="lg:col-span-7">
+        <div className="mb-14 md:mb-20">
+          <Reveal>
             <p className="eyebrow">{curriculum.eyebrow}</p>
-            <h2 className="mt-5 md:mt-6 font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-balance text-ink">
+            <h2 className="mt-5 md:mt-6 font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-balance text-ink max-w-3xl">
               Um currículo que dialoga{' '}
               <span className="italic font-accent text-gold-deep">com o mundo</span>.
             </h2>
-          </Reveal>
-          <Reveal className="lg:col-span-5" delay={180}>
-            <p className="text-base md:text-lg text-ink/70 leading-relaxed">
-              {curriculum.lede}
-            </p>
           </Reveal>
         </div>
 

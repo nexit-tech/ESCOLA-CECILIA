@@ -161,7 +161,7 @@ export const curriculum = {
   title: 'Um currículo que dialoga com o mundo.',
   lede: 'Nove áreas de conhecimento articuladas ao longo de toda a jornada escolar — do Fundamental I ao Ensino Médio, em diálogo constante com a Base Nacional Comum Curricular.',
   stats: [
-    { value: '09', label: 'Áreas integradas' },
+    { value: 'Global', label: 'Aprendizagem integrada' },
     { value: 'BNCC', label: 'Alinhamento total' },
     { value: 'Anual', label: 'Material atualizado' },
   ],

@@ -3,7 +3,7 @@ import { activities } from '@/lib/content';
 import { images } from '@/lib/images';
 import { SectionHeader } from './SectionHeader';
 
-const photos = [images.activities.educational, images.activities.sports, images.activities.projects];
+const photos = [images.activities.educational, '/basquete2.jpeg', '/oficinaeprojeto.jpeg'];
 
 export function Activities() {
   return (
@@ -17,7 +17,6 @@ export function Activities() {
               <span className="italic font-accent text-gold-deep">da sala de aula</span>.
             </>
           }
-          body="Mais de 20 atividades extracurriculares — a maior parte já incluída na mensalidade — ampliam horizontes, descobrem talentos e formam pessoas completas."
           align="center"
         />
 
