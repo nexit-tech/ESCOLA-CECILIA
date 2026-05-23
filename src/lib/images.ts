@@ -1,8 +1,9 @@
 const BASE = 'https://yata-apix-f86015e4-b0f0-46cb-93d0-ebd6a0cb6dd7.s3-object.locaweb.com.br';
 const BASE_ALT = 'https://yata.s3-object.locaweb.com.br';
+const R2 = 'https://pub-2f61a9552bab449495b240463abcaa31.r2.dev';
 
 export const images = {
-  logo: '/logo.png',
+  logo: `${R2}/logo.png`,
   pillars: {
     missao: `${BASE}/5ca2922e1fae4f4ab96e70b82c91c43c.png`,
     visao: `${BASE}/f6f08f587db642b59bd07c7dec169bcb.png`,
@@ -45,7 +46,7 @@ export const images = {
     `${BASE}/2149533960224293ac907cfb0d830286.jpg`,
     `${BASE}/ff124e9562d24d30940c8960a3cfa54b.jpg`,
     `${BASE}/c7bc9468624e4dc2ae1450bab2bd023d.jpg`,
-    '/piscina2.jpeg',
+    `${R2}/piscina2.jpeg`,
   ],
 };
 
@@ -53,30 +54,31 @@ export const heroImage = images.structure[0];
 
 export const local = {
   facade: images.structure[0],
-  fundamental: '/ensino-fundamental.jpeg',
-  fundamentalAlt: '/ensino-fundamental1.jpeg',
-  ensinoMedio: '/ensino-medio.jpeg',
-  fotoImportante: '/fotoimportante.jpeg',
-  infantil: '/infantil.jpeg',
-  diretora: '/diretora.jpeg',
+  fundamental: `${R2}/ensino-fundamental.jpeg`,
+  fundamentalAlt: `${R2}/ensino-fundamental1.jpeg`,
+  ensinoMedio: `${R2}/ensino-medio.jpeg`,
+  fotoImportante: `${R2}/fotoimportante.jpeg`,
+  infantil: `${R2}/infantil.jpeg`,
+  diretora: `${R2}/diretora.jpeg`,
+  oficinaeprojeto: `${R2}/oficinaeprojeto.jpeg`,
   mascotes: {
-    juntos: '/mascotes.jpeg',
-    cecilinha: '/mascotececilinha.jpeg',
-    lipe: '/mascotelipe.jpeg',
+    juntos: `${R2}/mascotes.jpeg`,
+    cecilinha: `${R2}/mascotececilinha.jpeg`,
+    lipe: `${R2}/mascotelipe.jpeg`,
   },
-  ballet: ['/ballet1.jpeg', '/ballet2.jpeg', '/ballet3.jpeg'],
-  basquete: ['/basquete1.jpeg', '/basquete2.jpeg', '/basquete3.jpeg'],
-  banda2: '/banda2.jpeg',
-  piscina2: '/piscina2.jpeg',
+  ballet: [`${R2}/ballet1.jpeg`, `${R2}/ballet2.jpeg`, `${R2}/ballet3.jpeg`],
+  basquete: [`${R2}/basquete1.jpeg`, `${R2}/basquete2.jpeg`, `${R2}/basquete3.jpeg`],
+  banda2: `${R2}/banda2.jpeg`,
+  piscina2: `${R2}/piscina2.jpeg`,
   eventos: [
-    '/eventos.jpeg',
-    '/eventos2.jpeg',
-    '/eventos3.jpeg',
-    '/eventos4.jpeg',
-    '/eventos5.jpeg',
-    '/eventos6.jpeg',
-    '/eventos7.jpeg',
-    '/eventos8.jpeg',
-    '/eventos9.jpeg',
+    `${R2}/eventos.jpeg`,
+    `${R2}/eventos2.jpeg`,
+    `${R2}/eventos3.jpeg`,
+    `${R2}/eventos4.jpeg`,
+    `${R2}/eventos5.jpeg`,
+    `${R2}/eventos6.jpeg`,
+    `${R2}/eventos7.jpeg`,
+    `${R2}/eventos8.jpeg`,
+    `${R2}/eventos9.jpeg`,
   ],
 };

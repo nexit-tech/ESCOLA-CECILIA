@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { activities } from '@/lib/content';
-import { images } from '@/lib/images';
+import { images, local } from '@/lib/images';
 import { SectionHeader } from './SectionHeader';
 
-const photos = [images.activities.educational, '/basquete2.jpeg', '/oficinaeprojeto.jpeg'];
+const photos = [images.activities.educational, local.basquete[1], local.oficinaeprojeto];
 
 export function Activities() {
   return (

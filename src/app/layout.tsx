@@ -52,6 +52,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <link rel="preconnect" href="https://yata.s3-object.locaweb.com.br" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://yata.s3-object.locaweb.com.br" />
+        <link
+          rel="preconnect"
+          href="https://pub-2f61a9552bab449495b240463abcaa31.r2.dev"
+          crossOrigin="anonymous"
+        />
+        <link rel="dns-prefetch" href="https://pub-2f61a9552bab449495b240463abcaa31.r2.dev" />
       </head>
       <body className="min-h-screen bg-cream text-ink antialiased">
         <a

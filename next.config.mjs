@@ -13,6 +13,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'yata.s3-object.locaweb.com.br',
       },
+      {
+        protocol: 'https',
+        hostname: 'pub-2f61a9552bab449495b240463abcaa31.r2.dev',
+      },
     ],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 dias
