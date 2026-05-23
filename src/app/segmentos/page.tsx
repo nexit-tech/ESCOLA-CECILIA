@@ -17,7 +17,7 @@ export default function SegmentosPage() {
             <span className="italic font-accent text-gold-deep">um cuidado próprio</span>.
           </>
         }
-        body="Do 1º ano do Fundamental à 3ª série do Ensino Médio — três etapas, uma continuidade pedagógica."
+        body="Da Educação Infantil ao Ensino Médio — etapas contínuas, com uma proposta pedagógica integrada."
       />
       <SegmentsJourney />
       <Curriculum />

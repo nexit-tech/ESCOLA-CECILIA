@@ -8,6 +8,7 @@ const facilities = [
   'Sala de Música',
   'Biblioteca',
   'Laboratório de Informática',
+  'Laboratório de Química',
   'Estúdio de Ballet',
   'Quadra de Esportes',
   'Piscina',
@@ -31,7 +32,7 @@ export function StructureIntro() {
           <Reveal className="lg:col-span-5" delay={180}>
             <p className="text-base md:text-lg text-ink/70 leading-relaxed">
               Salas climatizadas, laboratórios, biblioteca, espaços de convivência e áreas externas
-              — desenhados para acolher o cotidiano escolar do 1º ano ao Ensino Médio.
+              — desenhados para acolher o cotidiano escolar da Educação Infantil ao Ensino Médio.
             </p>
           </Reveal>
         </div>

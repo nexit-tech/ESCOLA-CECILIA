@@ -283,7 +283,6 @@ export const segments = [
       { title: 'Simulados ENEM', body: 'Avaliações periódicas e devolutivas' },
       { title: 'Orientação vocacional', body: 'Acompanhamento individual' },
       { title: 'Feira de Profissões', body: 'Contato direto com carreiras' },
-      { title: 'Plantões de dúvidas', body: 'Acolhimento até o vestibular' },
     ],
     pillars: ['Excelência acadêmica', 'Vocação', 'ENEM', 'Cidadania'],
   },

@@ -27,7 +27,7 @@ export function SegmentsBand() {
           <Reveal className="lg:col-span-7">
             <p className="eyebrow">Segmentos</p>
             <h2 className="mt-5 sm:mt-6 font-serif text-3xl sm:text-4xl md:text-6xl leading-[1.1] tracking-tight text-balance text-ink">
-              Do Ensino Fundamental ao{' '}
+              Da Educação Infantil ao{' '}
               <span className="italic font-accent text-gold-deep">Ensino Médio</span>.
             </h2>
           </Reveal>

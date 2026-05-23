@@ -5,11 +5,12 @@ import { Reveal } from './ui/Reveal';
 
 const events: { src: string; tag: string }[] = [
   { src: local.eventos[4], tag: 'Dia do Circo' },
-  { src: local.eventos[5], tag: 'Atividades na Piscina' },
+  { src: local.eventos[5], tag: 'Natação' },
   { src: local.eventos[6], tag: 'Aplicação de Flúor' },
   { src: local.eventos[7], tag: 'Feira de Ciências e Tecnologia' },
   { src: local.eventos[2], tag: 'Mostra de Dança' },
   { src: local.eventos[0], tag: 'Banda Marcial' },
+  { src: local.banda2, tag: 'Desfile Cívico' },
   { src: local.eventos[1], tag: 'Dia do Estudante' },
   { src: local.eventos[3], tag: 'Cecília Camp' },
   { src: local.eventos[8], tag: 'Cecília Camp' },
@@ -37,7 +38,7 @@ export function EventsGallery() {
           </Reveal>
           <Reveal className="lg:col-span-5" delay={200}>
             <p className="text-base md:text-lg text-cream/75 leading-relaxed">
-              Banda Marcial, Sarau Literário, Feira de Ciências, festividades e cultura — momentos
+              Banda Marcial, Sarau Literário, Feira de Ciências, eventos e cultura — momentos
               que marcam cada ano letivo.
             </p>
           </Reveal>
@@ -59,7 +60,9 @@ export function EventsGallery() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent opacity-95 transition-opacity duration-500 group-hover:opacity-100" />
                 <figcaption className="absolute inset-x-0 bottom-0 p-4 md:p-5">
-                  <p className="text-[10px] uppercase tracking-[0.25em] text-gold-light">Evento</p>
+                  {item.tag !== 'Natação' && (
+                    <p className="text-[10px] uppercase tracking-[0.25em] text-gold-light">Evento</p>
+                  )}
                   <p className="mt-1 font-serif text-base md:text-lg text-cream leading-tight">
                     {item.tag}
                   </p>

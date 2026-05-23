@@ -6,15 +6,7 @@ export function Footer() {
 
   return (
     <footer className="relative mt-16 sm:mt-24 bg-ink text-cream" data-nav-theme="dark">
-      <div className="container-wide grid gap-10 sm:gap-12 py-12 sm:py-16 md:grid-cols-3">
-        <div>
-          <p className="eyebrow text-gold">Educandário</p>
-          <h3 className="mt-3 font-serif text-2xl text-cream">Cecília Pinheiro</h3>
-          <p className="mt-4 text-cream/70 leading-relaxed max-w-sm">
-            Educação completa, valores cristãos e excelência pedagógica desde {school.founded}.
-          </p>
-        </div>
-
+      <div className="container-wide grid gap-10 sm:gap-12 py-12 sm:py-16 md:grid-cols-2">
         <div>
           <h4 className="font-serif text-lg text-gold">Visite-nos</h4>
           <address className="not-italic mt-4 space-y-1 text-cream/80 text-sm leading-relaxed">

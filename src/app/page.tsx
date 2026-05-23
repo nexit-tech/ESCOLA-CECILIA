@@ -1,6 +1,5 @@
 import { HeroFullbleed } from '@/components/HeroFullbleed';
 import { Manifesto } from '@/components/Manifesto';
-import { FeaturedFundamental } from '@/components/FeaturedFundamental';
 import { FeaturedEnsinoMedio } from '@/components/FeaturedEnsinoMedio';
 import { TechHighlight } from '@/components/TechHighlight';
 import { Mascots } from '@/components/Mascots';
@@ -17,7 +16,6 @@ export default function HomePage() {
     <>
       <HeroFullbleed />
       <Manifesto />
-      <FeaturedFundamental />
       <FeaturedEnsinoMedio />
       <TechHighlight />
       <Mascots />

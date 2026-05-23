@@ -1,10 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { featuredEnsinoMedio } from '@/lib/content';
 import { local } from '@/lib/images';
 import { Reveal } from './ui/Reveal';
 
-const FEATURE_IMAGE = local.ensinoMedio;
+const SEGMENT_PILLS = [
+  'Educação Infantil',
+  '1º ao 5º ano',
+  '6º ao 9º ano',
+  'Ensino Médio',
+];
 
 export function FeaturedEnsinoMedio() {
   return (
@@ -18,88 +22,47 @@ export function FeaturedEnsinoMedio() {
         aria-hidden
       />
 
-      <div className="container-wide relative py-16 sm:py-24 md:py-40 grid gap-10 lg:gap-16 lg:grid-cols-12 items-center">
-        <div className="lg:col-span-6 text-cream">
-          <Reveal>
-            <div className="inline-flex items-center gap-3 rounded-full border border-gold-light/30 bg-cream/5 px-5 py-2 text-[10px] uppercase tracking-[0.32em] text-gold-light backdrop-blur-md">
-              <span className="block h-1.5 w-1.5 rounded-full bg-gold-light" />
-              {featuredEnsinoMedio.badge}
-            </div>
-          </Reveal>
+      <div className="container-wide relative py-14 sm:py-20 md:py-28">
+        <Reveal>
+          <div className="relative mx-auto max-w-2xl aspect-[4/5] sm:aspect-[3/4] md:aspect-[16/9] overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] ring-1 ring-cream/10 shadow-soft">
+            <Image
+              src={local.ensinoMedio}
+              alt="Estudante"
+              fill
+              sizes="(max-width: 768px) 100vw, 80vw"
+              className="object-cover object-top"
+              priority={false}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
+          </div>
+        </Reveal>
 
-          <Reveal delay={120}>
-            <h2 className="mt-5 sm:mt-7 font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.08] tracking-tight text-balance text-cream">
-              {featuredEnsinoMedio.title.split(' ').map((word, i, arr) =>
-                i === arr.length - 1 ? (
-                  <span key={i} className="italic font-accent text-gold-light"> {word}</span>
-                ) : (
-                  <span key={i}>{i === 0 ? '' : ' '}{word}</span>
-                ),
-              )}
-            </h2>
-          </Reveal>
+        <Reveal delay={160}>
+          <div className="mt-8 sm:mt-10 grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-2 sm:gap-3 max-w-md sm:max-w-none mx-auto">
+            {SEGMENT_PILLS.map((label) => (
+              <span
+                key={label}
+                className="rounded-full border border-cream/25 bg-cream/5 px-3 sm:px-5 py-2 text-[11px] sm:text-sm text-center text-cream/90 backdrop-blur-sm whitespace-nowrap"
+              >
+                {label}
+              </span>
+            ))}
+          </div>
+        </Reveal>
 
-          <Reveal delay={260}>
-            <p className="mt-8 max-w-xl text-lg text-cream/80 leading-relaxed">
-              {featuredEnsinoMedio.body}
-            </p>
-          </Reveal>
-
-          <Reveal delay={400}>
+        <Reveal delay={300}>
+          <div className="mt-8 sm:mt-10 flex justify-center px-4 sm:px-0">
             <Link
-              href={featuredEnsinoMedio.cta.href}
-              className="group mt-10 inline-flex items-center gap-3 rounded-full bg-cream text-ink px-7 py-4 text-sm font-semibold tracking-wide transition-all hover:bg-gold-light"
+              href="/segmentos"
+              className="group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-cream text-ink px-6 sm:px-7 py-3.5 sm:py-4 text-sm font-semibold tracking-wide transition-all hover:bg-gold-light"
             >
-              {featuredEnsinoMedio.cta.label}
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-ink text-cream transition-transform group-hover:translate-x-1">
+              Conheça nossos segmentos
+              <span className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-ink text-cream transition-transform group-hover:translate-x-1">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
             </Link>
-          </Reveal>
-
-          <Reveal delay={520}>
-            <div className="mt-14 grid grid-cols-2 gap-6 border-t border-cream/15 pt-8 max-w-md">
-              <div>
-                <p className="font-serif text-3xl text-cream">ENEM</p>
-                <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-cream/55">
-                  simulados periódicos
-                </p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl text-cream">1:1</p>
-                <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-cream/55">
-                  preparando para o futuro
-                </p>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-
-        <Reveal direction="left" className="lg:col-span-6" delay={200}>
-          <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] ring-1 ring-cream/10 shadow-soft">
-              <Image
-                src={FEATURE_IMAGE}
-                alt="Estudante do Ensino Médio"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
-            </div>
-
-            <div className="hidden md:block absolute -bottom-6 -left-6 rounded-2xl bg-cream text-ink px-6 py-5 shadow-soft ring-1 ring-ink/5 max-w-[240px] animate-float-y">
-              <p className="font-serif text-xl leading-tight">
-                Preparados para o que vem depois.
-              </p>
-              <p className="mt-2 text-xs text-ink/55">— Equipe pedagógica</p>
-            </div>
-
-            <div className="hidden md:flex absolute -top-6 -right-6 h-24 w-24 items-center justify-center rounded-full bg-gold-light text-ink font-serif text-2xl shadow-soft animate-float-y" style={{ animationDelay: '1s' }}>
-              ENEM
-            </div>
           </div>
         </Reveal>
       </div>

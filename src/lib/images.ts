@@ -45,6 +45,7 @@ export const images = {
     `${BASE}/2149533960224293ac907cfb0d830286.jpg`,
     `${BASE}/ff124e9562d24d30940c8960a3cfa54b.jpg`,
     `${BASE}/c7bc9468624e4dc2ae1450bab2bd023d.jpg`,
+    '/piscina2.jpeg',
   ],
 };
 
@@ -65,6 +66,8 @@ export const local = {
   },
   ballet: ['/ballet1.jpeg', '/ballet2.jpeg', '/ballet3.jpeg'],
   basquete: ['/basquete1.jpeg', '/basquete2.jpeg', '/basquete3.jpeg'],
+  banda2: '/banda2.jpeg',
+  piscina2: '/piscina2.jpeg',
   eventos: [
     '/eventos.jpeg',
     '/eventos2.jpeg',
