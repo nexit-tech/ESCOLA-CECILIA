@@ -54,12 +54,7 @@ export function HeroFullbleed() {
 
       <div className="container-wide w-full pt-24 pb-12 sm:pt-24 sm:pb-16 md:pt-28 md:pb-24 relative">
         <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 sm:gap-3 rounded-full border border-gold-light/40 bg-cream/5 backdrop-blur-md px-3.5 sm:px-5 py-1.5 sm:py-2 text-[9px] sm:text-[10px] md:text-xs uppercase tracking-[0.22em] sm:tracking-[0.28em] text-gold-light animate-fade-up">
-            <span className="block h-1 w-1 sm:h-1.5 sm:w-1.5 rounded-full bg-gold-light animate-pulse" />
-            {heroContent.eyebrow}
-          </div>
-
-          <h1 className="mt-5 sm:mt-7 md:mt-8 font-serif text-cream text-[clamp(2rem,8vw,2.5rem)] leading-[1.05] sm:text-5xl md:text-7xl lg:text-[5.5rem] tracking-tight text-balance animate-fade-up [animation-delay:120ms]">
+          <h1 className="font-serif text-cream text-[clamp(2rem,8vw,2.5rem)] leading-[1.05] sm:text-5xl md:text-7xl lg:text-[5.5rem] tracking-tight text-balance animate-fade-up">
             <span className="block">Cecília Pinheiro:</span>
             <span className="block italic font-accent text-gold-light mt-1 sm:mt-2">
               Dedicação plena
@@ -105,9 +100,9 @@ export function HeroFullbleed() {
               </p>
             </div>
             <div className="border-l border-cream/15 pl-3 sm:pl-5 md:pl-6">
-              <p className="font-serif text-xl sm:text-2xl md:text-3xl text-cream">+20</p>
+              <p className="font-serif text-xl sm:text-2xl md:text-3xl text-cream">Estrutura</p>
               <p className="mt-1 sm:mt-2 text-[9px] sm:text-[10px] uppercase tracking-[0.18em] sm:tracking-[0.22em] text-cream/60 leading-tight">
-                Atividades inclusas
+                Consolidada
               </p>
             </div>
           </div>

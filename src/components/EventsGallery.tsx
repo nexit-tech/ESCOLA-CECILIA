@@ -4,15 +4,15 @@ import { local } from '@/lib/images';
 import { Reveal } from './ui/Reveal';
 
 const events: { src: string; tag: string }[] = [
+  { src: local.eventos[4], tag: 'Dia do Circo' },
+  { src: local.eventos[5], tag: 'Atividades na Piscina' },
+  { src: local.eventos[6], tag: 'Aplicação de Flúor' },
+  { src: local.eventos[7], tag: 'Feira de Ciências e Tecnologia' },
+  { src: local.eventos[2], tag: 'Mostra de Dança' },
   { src: local.eventos[0], tag: 'Banda Marcial' },
-  { src: local.eventos[1], tag: 'Apresentações' },
-  { src: local.eventos[2], tag: 'Festividades' },
-  { src: local.eventos[3], tag: 'Comunidade' },
-  { src: local.eventos[4], tag: 'Cultura' },
-  { src: local.eventos[5], tag: 'Confraternização' },
-  { src: local.eventos[6], tag: 'Sarau Literário' },
-  { src: local.eventos[7], tag: 'Feira de Ciências' },
-  { src: local.eventos[8], tag: 'Encontros' },
+  { src: local.eventos[1], tag: 'Dia do Estudante' },
+  { src: local.eventos[3], tag: 'Cecília Camp' },
+  { src: local.eventos[8], tag: 'Cecília Camp' },
 ];
 
 export function EventsGallery() {

@@ -58,7 +58,6 @@ export function Footer() {
       <div className="border-t border-cream/10">
         <div className="container-wide flex flex-col items-center justify-between gap-3 py-6 text-xs text-cream/55 md:flex-row">
           <p>© {year} {school.name}. Todos os direitos reservados.</p>
-          <p className="font-serif italic">Educar é semear o futuro.</p>
         </div>
       </div>
     </footer>

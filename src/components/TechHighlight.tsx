@@ -37,8 +37,7 @@ export function TechHighlight() {
           </Reveal>
           <Reveal delay={260}>
             <p className="mt-6 max-w-xl text-base md:text-lg text-ink/75 leading-relaxed">
-              Sala oficial Google for Education com Chromebooks, ferramentas digitais integradas à
-              rotina e práticas pedagógicas que preparam alunos para os desafios do tempo presente.
+              Sala Google for Education com Tablets e ferramentas digitais integradas à rotina.
             </p>
           </Reveal>
 
@@ -49,7 +48,7 @@ export function TechHighlight() {
                 <p className="mt-1 text-xs text-ink/55">para todos os segmentos</p>
               </div>
               <div className="rounded-2xl bg-white px-5 py-4 ring-1 ring-ink/5 shadow-soft">
-                <p className="font-serif text-2xl text-ink">Chromebooks</p>
+                <p className="font-serif text-2xl text-ink">Tablets</p>
                 <p className="mt-1 text-xs text-ink/55">disponíveis em aula</p>
               </div>
             </div>

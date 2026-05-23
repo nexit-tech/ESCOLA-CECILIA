@@ -60,13 +60,7 @@ export function FeaturedEnsinoMedio() {
           </Reveal>
 
           <Reveal delay={520}>
-            <div className="mt-14 grid grid-cols-3 gap-6 border-t border-cream/15 pt-8 max-w-md">
-              <div>
-                <p className="font-serif text-3xl text-cream">3</p>
-                <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-cream/55">
-                  anos de Ensino Médio
-                </p>
-              </div>
+            <div className="mt-14 grid grid-cols-2 gap-6 border-t border-cream/15 pt-8 max-w-md">
               <div>
                 <p className="font-serif text-3xl text-cream">ENEM</p>
                 <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-cream/55">
@@ -76,7 +70,7 @@ export function FeaturedEnsinoMedio() {
               <div>
                 <p className="font-serif text-3xl text-cream">1:1</p>
                 <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-cream/55">
-                  orientação vocacional
+                  preparando para o futuro
                 </p>
               </div>
             </div>

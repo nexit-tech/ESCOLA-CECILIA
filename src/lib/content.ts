@@ -29,18 +29,18 @@ export const navigation = [
 ];
 
 export const heroContent = {
-  eyebrow: 'Educandário desde 1992',
+  eyebrow: '',
   title: 'Cecília Pinheiro: Dedicação plena ao Ensino.',
   body:
-    'Do Ensino Fundamental I ao Ensino Médio — preparando estudantes com excelência acadêmica, valores cristãos e mais de três décadas de tradição.',
+    'Da Educação Infantil ao Ensino Médio — preparando estudantes com sabedoria acadêmica, valores cristãos e mais de três décadas de tradição.',
   primaryCta: { label: 'Conheça a escola', href: '/estrutura' },
   secondaryCta: { label: 'Agende uma visita', href: '/contato' },
 };
 
 export const manifesto = {
-  badge: 'Dedicação plena',
+  badge: 'Dedicação plena ao Ensino',
   statement:
-    'Excelência no Ensino. Aprofundamento curricular. Preparação para o que vem depois. Desde 1992, formando alunos prontos para o mundo.',
+    'Aprofundamento curricular. Desde 1992, formando alunos prontos para o mundo.',
   signoff: 'Educandário Cecília Pinheiro',
 };
 
@@ -48,7 +48,7 @@ export const featuredEnsinoMedio = {
   badge: 'Ensino Médio',
   title: 'Aluno preparado para o que vem depois.',
   body:
-    'Acompanhamento próximo, orientação vocacional, simulados ENEM e um currículo robusto que combina excelência acadêmica e formação humana. A última etapa da Educação Básica é vivida aqui com profundidade e propósito.',
+    'Orientação vocacional, simulados ENEM e um currículo estruturado. A última etapa da Educação Básica é vivida aqui com profundidade e propósito.',
   cta: { label: 'Conheça nossos segmentos', href: '/segmentos' },
 };
 
@@ -71,7 +71,7 @@ export const mascots = {
   badge: 'Mascotes',
   title: 'Conheça Cecilinha e Lipe.',
   body:
-    'Nossos mascotes acompanham o dia a dia da escola, presentes na identidade visual, nos eventos e no carinho com cada estudante. Eles representam o espírito acolhedor e divertido do Cecília Pinheiro.',
+    'Nossos mascotes acompanham o dia a dia da escola, presentes na identidade visual e nos eventos. Eles representam o espírito acolhedor e divertido do Cecília Pinheiro.',
 };
 
 export const eventsGallery = {
@@ -86,19 +86,19 @@ export const educationalPillars = [
     key: 'valores',
     label: 'Valores Cristãos',
     description:
-      'Princípios bíblicos que orientam a convivência, o respeito e cada decisão pedagógica.',
+      'Princípios bíblicos que orientam a convivência e o respeito.',
   },
   {
     key: 'integral',
     label: 'Formação Integral',
     description:
-      'Cabeça, coração e mãos. Desenvolvemos o aluno em seus aspectos cognitivo, emocional e social.',
+      'Desenvolvemos o aluno em seus aspectos cognitivo, emocional e social.',
   },
   {
     key: 'tecnologia',
     label: 'Tecnologia & Inovação',
     description:
-      'Sala oficial Google for Education, ferramentas digitais e práticas pedagógicas alinhadas à BNCC.',
+      'Sala Google for Education, ferramentas digitais e práticas pedagógicas alinhadas à BNCC.',
   },
   {
     key: 'idiomas',
@@ -215,6 +215,24 @@ export const curriculum = {
 };
 
 export const segments = [
+  {
+    key: 'infantil',
+    label: 'Educação Infantil',
+    range: 'G3, G4 e G5',
+    ageRange: '3 a 5 anos',
+    duration: '3 anos',
+    chapter: 'Capítulo 00',
+    tagline: 'O primeiro encontro com a escola.',
+    description:
+      'Acolhemos as primeiras descobertas com afeto e intencionalidade pedagógica, favorecendo o desenvolvimento físico, psicológico, intelectual e social — sempre em parceria com a família.',
+    highlights: [
+      { title: 'Letramento lúdico', body: 'As primeiras letras pelo brincar' },
+      { title: 'Música e movimento', body: 'Corpo e expressão integrados' },
+      { title: 'Inglês desde cedo', body: 'Familiarização com a língua' },
+      { title: 'Acolhimento', body: 'Adaptação cuidadosa à rotina escolar' },
+    ],
+    pillars: ['Acolhimento', 'Brincar', 'Descoberta', 'Convivência'],
+  },
   {
     key: 'fund1',
     label: 'Ensino Fundamental I',

@@ -2,11 +2,18 @@ import Image from 'next/image';
 import { local } from '@/lib/images';
 import { Reveal } from './ui/Reveal';
 
-const stats = [
-  { value: '29', label: 'Ambientes' },
-  { value: 'Google', label: 'For Education' },
-  { value: 'Piscina', label: 'Aulas inclusas' },
-  { value: 'Quadras', label: 'Coberta + ar livre' },
+const facilities = [
+  'Salas climatizadas',
+  'Sala Google for Education',
+  'Sala de Música',
+  'Biblioteca',
+  'Laboratório de Informática',
+  'Estúdio de Ballet',
+  'Quadra de Esportes',
+  'Piscina',
+  'Playground coberto',
+  '2 cantinas',
+  'Departamento de Saúde Mental',
 ];
 
 export function StructureIntro() {
@@ -42,34 +49,36 @@ export function StructureIntro() {
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/45 via-ink/10 to-transparent sm:from-ink/55" />
-
-            {/* Stats overlay só no desktop */}
-            <div className="hidden md:block absolute bottom-0 left-0 right-0 p-10 text-cream">
-              <div className="grid grid-cols-4 gap-8 border-t border-cream/20 pt-8 max-w-4xl">
-                {stats.map((stat) => (
-                  <div key={stat.label}>
-                    <p className="font-serif text-3xl">{stat.value}</p>
-                    <p className="mt-1.5 text-[10px] uppercase tracking-[0.22em] text-cream/65">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </Reveal>
 
-        {/* Stats abaixo da imagem em mobile/tablet */}
         <Reveal delay={120}>
-          <div className="md:hidden mt-6 grid grid-cols-2 gap-4 bg-white rounded-2xl ring-1 ring-ink/5 shadow-soft p-5">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-ink">
-                <p className="font-serif text-xl sm:text-2xl">{stat.value}</p>
-                <p className="mt-1.5 text-[10px] uppercase tracking-[0.22em] text-ink/55 leading-tight">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
+          <div className="mt-8 md:mt-12">
+            <div className="flex items-center justify-between mb-5 md:mb-7">
+              <p className="eyebrow">O que oferecemos</p>
+              <p className="font-mono text-[10px] tracking-widest text-ink/40 hidden sm:block">
+                {String(facilities.length).padStart(2, '0')} AMBIENTES & MAIS
+              </p>
+            </div>
+
+            <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3">
+              {facilities.map((item, i) => (
+                <li
+                  key={item}
+                  className="group relative flex items-center gap-3 rounded-xl bg-white px-4 py-3.5 sm:py-4 ring-1 ring-ink/5 shadow-soft transition-all hover:-translate-y-0.5 hover:ring-gold-deep/30"
+                >
+                  <span className="font-mono text-[10px] text-ink/35 tracking-widest tabular-nums">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <span className="font-serif text-sm sm:text-base text-ink leading-tight">
+                    {item}
+                  </span>
+                </li>
+              ))}
+              <li className="flex items-center justify-center rounded-xl bg-ink text-cream px-4 py-3.5 sm:py-4 col-span-2 sm:col-span-1">
+                <span className="font-accent italic text-sm sm:text-base">e muito mais.</span>
+              </li>
+            </ul>
           </div>
         </Reveal>
       </div>
