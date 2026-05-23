@@ -272,7 +272,7 @@ export const segments = [
   {
     key: 'medio',
     label: 'Ensino Médio',
-    range: '1ª à 3ª série',
+    range: '1º ao 3º ano',
     ageRange: '15 a 17 anos',
     duration: '3 anos',
     chapter: 'Capítulo 03',

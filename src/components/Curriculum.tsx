@@ -25,21 +25,6 @@ export function Curriculum() {
           </Reveal>
         </div>
 
-        <Reveal>
-          <div className="grid grid-cols-3 divide-x divide-ink/10 border-y border-ink/10 mb-14 md:mb-20">
-            {curriculum.stats.map((stat) => (
-              <div key={stat.label} className="px-4 md:px-6 py-6 md:py-8 text-center">
-                <p className="font-serif text-3xl md:text-5xl text-ink leading-none">
-                  {stat.value}
-                </p>
-                <p className="mt-3 text-[10px] md:text-xs uppercase tracking-[0.22em] text-ink/55">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Reveal>
-
         <div className="grid gap-px bg-ink/10 rounded-2xl overflow-hidden ring-1 ring-ink/10 sm:grid-cols-2 lg:grid-cols-3">
           {curriculum.subjects.map((subject, i) => {
             const Icon = curriculumIconMap[subject.key as keyof typeof curriculumIconMap];
