@@ -25,6 +25,7 @@ export const navigation = [
   { label: 'Segmentos', href: '/segmentos' },
   { label: 'Estrutura', href: '/estrutura' },
   { label: 'Atividades', href: '/atividades' },
+  { label: 'Redes Sociais', href: '/#redes-sociais' },
   { label: 'Contato', href: '/contato' },
 ];
 

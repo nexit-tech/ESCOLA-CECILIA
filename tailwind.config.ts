@@ -56,12 +56,28 @@ const config: Config = {
           '0%': { backgroundPosition: '-200% 0' },
           '100%': { backgroundPosition: '200% 0' },
         },
+        navSlideDown: {
+          '0%': { opacity: '0', transform: 'translateY(-12px)', clipPath: 'inset(0 0 100% 0)' },
+          '60%': { opacity: '1' },
+          '100%': { opacity: '1', transform: 'translateY(0)', clipPath: 'inset(0 0 0% 0)' },
+        },
+        navItemIn: {
+          '0%': { opacity: '0', transform: 'translateX(-24px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        backdropIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
       animation: {
         'fade-up': 'fadeUp 0.7s ease-out both',
         'marquee-x': 'marqueeX 40s linear infinite',
         'marquee-x-slow': 'marqueeX 60s linear infinite',
         'float-y': 'floatY 6s ease-in-out infinite',
+        'nav-slide-down': 'navSlideDown 0.55s cubic-bezier(0.22, 1, 0.36, 1) both',
+        'nav-item-in': 'navItemIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both',
+        'backdrop-in': 'backdropIn 0.4s ease-out both',
       },
     },
   },

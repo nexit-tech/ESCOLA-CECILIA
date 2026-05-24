@@ -10,6 +10,7 @@ import { EventsGallery } from '@/components/EventsGallery';
 import { SegmentsBand } from '@/components/SegmentsBand';
 import { Testimonials } from '@/components/Testimonials';
 import { DirectorQuote } from '@/components/DirectorQuote';
+import { SocialMedia } from '@/components/SocialMedia';
 
 export default function HomePage() {
   return (
@@ -26,6 +27,7 @@ export default function HomePage() {
       <SegmentsBand />
       <Testimonials />
       <DirectorQuote />
+      <SocialMedia />
     </>
   );
 }
