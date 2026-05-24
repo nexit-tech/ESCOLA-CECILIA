@@ -189,24 +189,29 @@ export function Header() {
 
       {/* Mobile menu — overlay full-screen */}
       <div
-        className={`lg:hidden fixed inset-0 z-40 transition-[opacity,visibility] duration-500 ${
+        className={`lg:hidden fixed inset-0 z-40 overflow-y-auto overscroll-contain transition-[opacity,visibility] duration-500 ${
           open ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
+        style={{ WebkitOverflowScrolling: 'touch' }}
         aria-hidden={!open}
       >
-        {/* Backdrop com blur */}
+        {/* Backdrop com blur — fixed pra cobrir mesmo durante scroll */}
         <button
           tabIndex={-1}
           aria-label="Fechar menu"
           onClick={() => setOpen(false)}
-          className="absolute inset-0 bg-ink/40 backdrop-blur-md"
+          className="fixed inset-0 bg-ink/40 backdrop-blur-md -z-10"
         />
 
         {/* Painel deslizante */}
         <div
-          className={`relative pt-24 pb-12 px-6 bg-gradient-to-b from-ink via-ink to-ink/95 text-cream min-h-screen overflow-y-auto ${
+          className={`relative pt-24 px-6 bg-gradient-to-b from-ink via-ink to-ink/95 text-cream ${
             open ? 'animate-nav-slide-down' : ''
           }`}
+          style={{
+            minHeight: '100dvh',
+            paddingBottom: 'calc(3rem + env(safe-area-inset-bottom, 0px))',
+          }}
         >
           {/* Decoração — círculo dourado */}
           <div
@@ -273,7 +278,7 @@ export function Header() {
               }}
             >
               <a
-                href="https://wa.me/5521976236086?text=Ol%C3%A1!%20Tenho%20interesse%20em%20conhecer%20o%20Educand%C3%A1rio%20Cec%C3%ADlia%20Pinheiro."
+                href="https://wa.me/5521976236086?text=Ol%C3%A1!%20Venho%20do%20site%20e%20tenho%20interesse%20em%20conhecer%20o%20Cec%C3%ADlia%20Pinheiro."
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}

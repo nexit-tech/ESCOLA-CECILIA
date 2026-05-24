@@ -85,7 +85,7 @@ export function HeroFullbleed() {
               {heroContent.secondaryCta.label}
             </Link>
             <a
-              href="https://wa.me/5521976236086?text=Ol%C3%A1!%20Tenho%20interesse%20em%20conhecer%20o%20Educand%C3%A1rio%20Cec%C3%ADlia%20Pinheiro."
+              href="https://wa.me/5521976236086?text=Ol%C3%A1!%20Venho%20do%20site%20e%20tenho%20interesse%20em%20conhecer%20o%20Cec%C3%ADlia%20Pinheiro."
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#25D366] text-white px-6 sm:px-7 py-3.5 sm:py-4 text-sm font-semibold tracking-wide transition-all hover:bg-[#1ebe57] hover:shadow-soft"
