@@ -35,12 +35,23 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {navigation.map((item) => (
               <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-cream/80 hover:text-gold transition-colors"
-                >
-                  {item.label}
-                </Link>
+                {item.external ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cream/80 hover:text-gold transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className="text-cream/80 hover:text-gold transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

@@ -70,6 +70,9 @@ export const local = {
   basquete: [`${R2}/basquete1.jpeg`, `${R2}/basquete2.jpeg`, `${R2}/basquete3.jpeg`],
   banda2: `${R2}/banda2.jpeg`,
   piscina2: `${R2}/piscina2.jpeg`,
+  carol: `${R2}/carol.png`,
+  qr: `${R2}/qr.png`,
+  portal: `${R2}/portal.png`,
   eventos: [
     `${R2}/eventos.jpeg`,
     `${R2}/eventos2.jpeg`,

@@ -25,6 +25,8 @@ export const navigation = [
   { label: 'Segmentos', href: '/segmentos' },
   { label: 'Estrutura', href: '/estrutura' },
   { label: 'Atividades', href: '/atividades' },
+  { label: 'App Agenda', href: 'https://onelink.to/tbgh5d', external: true },
+  { label: 'Portal do Aluno', href: 'https://ceciliapinheiro.siglobal.net.br/si_usuarios/login', external: true },
   { label: 'Redes Sociais', href: '/#redes-sociais' },
   { label: 'Contato', href: '/contato' },
 ];

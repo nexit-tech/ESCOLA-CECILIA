@@ -144,16 +144,28 @@ export function Header() {
             />
           </Link>
 
-          <nav className="hidden lg:flex items-center justify-center gap-8" aria-label="Menu principal">
-            {navigation.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`whitespace-nowrap text-sm font-medium transition-colors duration-500 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:transition-all hover:after:w-full ${navLinkClass}`}
-              >
-                {item.label}
-              </Link>
-            ))}
+          <nav className="hidden lg:flex items-center justify-center gap-6 xl:gap-7" aria-label="Menu principal">
+            {navigation.map((item) => {
+              const commonClass = `whitespace-nowrap text-sm font-medium transition-colors duration-500 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:transition-all hover:after:w-full ${navLinkClass}`;
+              if (item.external) {
+                return (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={commonClass}
+                  >
+                    {item.label}
+                  </a>
+                );
+              }
+              return (
+                <Link key={item.href} href={item.href} className={commonClass}>
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           <span aria-hidden className="hidden lg:block" />
@@ -234,19 +246,15 @@ export function Header() {
             <nav className="mt-6 flex flex-col" aria-label="Menu mobile">
               {navigation.map((item, i) => {
                 const active = isActive(item.href);
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    style={{
-                      animation: open ? 'navItemIn 0.55s cubic-bezier(0.22,1,0.36,1) both' : undefined,
-                      animationDelay: `${180 + i * 70}ms`,
-                    }}
-                    className={`group flex items-baseline justify-between gap-4 py-5 border-b border-cream/10 transition-colors ${
-                      active ? 'text-gold-light' : 'text-cream/90 hover:text-gold-light'
-                    }`}
-                  >
+                const itemStyle = {
+                  animation: open ? 'navItemIn 0.55s cubic-bezier(0.22,1,0.36,1) both' : undefined,
+                  animationDelay: `${180 + i * 70}ms`,
+                };
+                const itemClass = `group flex items-baseline justify-between gap-4 py-5 border-b border-cream/10 transition-colors ${
+                  active ? 'text-gold-light' : 'text-cream/90 hover:text-gold-light'
+                }`;
+                const inner = (
+                  <>
                     <span className="flex items-baseline gap-4">
                       <span className="font-mono text-[10px] tracking-widest text-cream/35 tabular-nums">
                         {String(i + 1).padStart(2, '0')}
@@ -260,10 +268,42 @@ export function Header() {
                         active ? 'opacity-100' : 'opacity-60'
                       }`}
                     >
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                        <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
+                      {item.external ? (
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <path d="M7 17L17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      ) : (
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                          <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      )}
                     </span>
+                  </>
+                );
+                if (item.external) {
+                  return (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setOpen(false)}
+                      style={itemStyle}
+                      className={itemClass}
+                    >
+                      {inner}
+                    </a>
+                  );
+                }
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    style={itemStyle}
+                    className={itemClass}
+                  >
+                    {inner}
                   </Link>
                 );
               })}

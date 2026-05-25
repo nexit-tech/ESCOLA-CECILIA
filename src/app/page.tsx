@@ -11,6 +11,7 @@ import { SegmentsBand } from '@/components/SegmentsBand';
 import { Testimonials } from '@/components/Testimonials';
 import { DirectorQuote } from '@/components/DirectorQuote';
 import { SocialMedia } from '@/components/SocialMedia';
+import { AppAndPortal } from '@/components/AppAndPortal';
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
       <TechHighlight />
       <Mascots />
       <ActivitiesShowcase />
+      <AppAndPortal />
       <WhyCecilia />
       <EventsGallery />
       <EducationalPillars />
