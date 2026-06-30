@@ -14,7 +14,7 @@ export const school = {
     { label: 'Secretaria', number: '(21) 2082-0155' },
     { label: 'WhatsApp', number: '(21) 97623-6086', whatsapp: true },
   ],
-  email: 'contato@ceciliapinheiro.com.br',
+  email: 'contatoceciliapinheiro@gmail.com',
   mapEmbedSrc:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1897.9517876145!2d-42.93263917233732!3d-22.782284267239078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11500d25d9d1f0aa!2sEducand%C3%A1rio%20Cec%C3%ADlia%20Pinheiro!5e0!3m2!1spt-BR!2sbr!4v1586915372334!5m2!1spt-BR!2sbr',
 };
